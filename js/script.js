@@ -1,3 +1,4 @@
+
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const username = document.getElementById('username').value;
@@ -12,3 +13,12 @@ document.getElementById('logoutButton').addEventListener('click', function() {
     document.getElementById('logoutButton').style.display = 'none';
     document.getElementById('loginButton').style.display = 'block';
 });
+
+// Inicializar todos los tooltips
+document.addEventListener('DOMContentLoaded', function() {
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+}); 
+
