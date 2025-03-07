@@ -4,11 +4,11 @@ function iniciarSesion() {
     const activeUser = localStorage.getItem('activeUser');
     if (activeUser) {
         // Si hay sesión activa, actualizar la UI
-        actualizarLogin(activeUser);
+        updateUIForLoggedUser(activeUser);
     }
 }
 
-function actualizarLogin(username) {
+function updateUIForLoggedUser(username) {
     const brandText = document.querySelector('.navbar-brand span');
     const loginButton = document.getElementById('loginButton');
     const logoutButton = document.getElementById('logoutButton');
@@ -18,7 +18,7 @@ function actualizarLogin(username) {
     if (logoutButton) logoutButton.style.display = 'block';
 }
 
-function cerrarSesion() {
+function updateUIForLoggedOutUser() {
     const brandText = document.querySelector('.navbar-brand span');
     const loginButton = document.getElementById('loginButton');
     const logoutButton = document.getElementById('logoutButton');
@@ -39,7 +39,7 @@ function initializeLoginEvents() {
             localStorage.setItem('activeUser', username);
             
             // Actualizar la UI
-            actualizarLogin(username);
+            updateUIForLoggedUser(username);
             
             // Cerrar el modal
             const loginModal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
@@ -54,7 +54,7 @@ function initializeLoginEvents() {
             localStorage.removeItem('activeUser');
             
             // Actualizar la UI
-            cerrarSesion();
+            updateUIForLoggedOutUser();
         });
     }
 }
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const isInView = window.location.pathname.includes('/view/');
     
     // Cargar el header correspondiente
-    fetch(isInView ? '../headIfoot/header.html' : 'headIfoot/header.html')
+    fetch(isInView ? '../headIfoot/headerView.html' : 'headIfoot/header.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('header-container').innerHTML = data;
@@ -98,7 +98,7 @@ function checkSessionExpiration() {
     if (sessionStartTime && (currentTime - sessionStartTime > sessionDuration)) {
         // La sesión ha expirado
         localStorage.clear();
-        cerrarSesion();
+        updateUIForLoggedOutUser();
         alert('La seva sessió ha expirat. Si us plau, torni a iniciar sessió.');
     }
 }
