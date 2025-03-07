@@ -18,10 +18,81 @@
         <div class="row align-items-center">
             <div class="col-lg-10 col-md-9">
                 <div class="d-flex align-items-center">
+<<<<<<< HEAD
                     <i class="fas fa-cookie-bite fs-3 me-3"></i>
                     <div>
                         <strong>Avís de Cookies</strong>
                         <p class="mb-0">Utilitzem cookies pròpies i de tercers per millorar els nostres serveis i mostrar publicitat relacionada amb les seves preferències mitjançant l'anàlisi dels seus hàbits de navegació. Si continua navegant, considerem que accepta el seu ús.</p>
+=======
+                    <a class="navbar-brand" href="#">
+                        <span>Food Truck</span>
+                    </a>
+                </div>
+
+                <!-- Toggler for mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <!-- Menú Dropdowns per Tipus de Menjar (Center) -->
+                    <div class="navbar-nav mx-auto d-flex flex-row">
+                        <!-- Dropdown per Freds -->
+                        <div class="dropdown mx-2">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownFreds" data-bs-toggle="dropdown" aria-expanded="false">
+                                Freds
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownFreds">
+                                <li><a class="dropdown-item" href="view/entrepa_de_iberic.html">Entrepà de Ibèric</a></li>
+                                <li><a class="dropdown-item" href="view/entrepa_de_formatge.html">Entrepà de Formatge</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Dropdown per Calents -->
+                        <div class="dropdown mx-2">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCalents" data-bs-toggle="dropdown" aria-expanded="false">
+                                Calents
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownCalents">
+                                <li><a class="dropdown-item" href="view/burguer.html">Burger</a></li>
+                                <li><a class="dropdown-item" href="view/frankfurt.html">Frankfurt</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Dropdown per Dolços -->
+                        <div class="dropdown mx-2">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownDolços" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dolços
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownDolços">
+                                <li><a class="dropdown-item" href="view/gelat_magnum.html">Gelat Magnum</a></li>
+                                <li><a class="dropdown-item" href="view/creppe_de_xocolata.html">Crêppe de Xocolata</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Dropdown per Begudes -->
+                        <div class="dropdown mx-2">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownBegudes" data-bs-toggle="dropdown" aria-expanded="false">
+                                Begudes
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownBegudes">
+                                <li><a class="dropdown-item" href="view/coca_cola.html">Coca Cola</a></li>
+                                <li><a class="dropdown-item" href="view/cervesa.html">Cervesa</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Login/Register Buttons (Right) -->
+                    <div class="ms-auto">
+                        <button class="btn btn-outline-success" id="loginButton" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </button>
+                        <button class="btn btn-outline-danger" id="logoutButton" style="display: none;">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </button>
+>>>>>>> ae944dd8ae109fd2984e37a26178ba6ae49c1201
                     </div>
                 </div>
             </div>
