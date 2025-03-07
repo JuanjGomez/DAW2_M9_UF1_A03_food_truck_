@@ -16,6 +16,11 @@ document.getElementById('logoutButton').addEventListener('click', function() {
 // Inicializar todos los tooltips
 // Función para cargar el footer
 document.addEventListener('DOMContentLoaded', function() {
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
     // Cargar el footer
     fetch('footer.html')
         .then(response => response.text())
@@ -26,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
             var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
                 return new bootstrap.Tooltip(tooltipTriggerEl)
-            });
-        });
-});
+            })
+        })
+    
+})

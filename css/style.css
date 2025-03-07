@@ -1,9 +1,44 @@
-.dropdown-submenu {
-    position: relative;
+/* Estilos personalizados para las pills */
+.nav-pills .nav-link {
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 10px 20px; /* Más padding para mayor tamaño */
+    font-weight: 500; /* Texto con algo de negrita */
+    transition: all 0.3s ease-in-out; /* Transición suave */
 }
 
-.dropdown-submenu .dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -1px;
+.nav-pills .nav-link:hover {
+    background-color: #e9ecef; /* Color al pasar el ratón */
+    color: #007bff; /* Color de texto azul al pasar el ratón */
+}
+
+.nav-pills .nav-link.active {
+    background-color: #007bff; /* Fondo azul para el elemento activo */
+    color: white; /* Texto blanco cuando está activo */
+    font-weight: 600; /* Texto más grueso cuando está activo */
+}
+
+/* Estilos de contenido de las pills */
+.tab-content {
+    margin-top: 20px; /* Espacio superior para separar las pills del contenido */
+}
+
+.tab-pane {
+    display: none;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.tab-pane a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #ddd; /* Borde inferior entre enlaces */
+}
+
+.tab-pane a:hover {
+    background-color: #e9ecef;
+    color: #007bff; /* Color de texto de los enlaces al pasar el ratón */
 }
