@@ -233,3 +233,16 @@
     transition: opacity 0.3s ease-in-out;
     opacity: 1;
 }
+
+.product-page {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.pagination .page-link {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination .page-item.disabled .page-link {
+    cursor: not-allowed;
+}

@@ -135,3 +135,62 @@ document.addEventListener('DOMContentLoaded', function() {
     acceptButton.addEventListener('click', hideCookiesBanner);
     rejectButton.addEventListener('click', hideCookiesBanner);
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const pages = document.querySelectorAll('.product-page');
+    const pageItems = document.querySelectorAll('.pagination .page-item[data-page]');
+    const prevButton = document.getElementById('prev-page');
+    const nextButton = document.getElementById('next-page');
+    let currentPage = 1;
+    const totalPages = pages.length;
+
+    // Función para mostrar una página específica
+    function showPage(pageNumber) {
+        // Ocultar todas las páginas
+        pages.forEach(page => page.style.display = 'none');
+        
+        // Mostrar la página seleccionada
+        document.querySelector(`.product-page[data-page="${pageNumber}"]`).style.display = 'block';
+        
+        // Actualizar estado de los botones de paginación
+        pageItems.forEach(item => {
+            item.classList.remove('active');
+            if (item.dataset.page == pageNumber) {
+                item.classList.add('active');
+            }
+        });
+
+        // Actualizar estado de los botones prev/next
+        prevButton.classList.toggle('disabled', pageNumber === 1);
+        nextButton.classList.toggle('disabled', pageNumber === totalPages);
+        
+        currentPage = pageNumber;
+    }
+
+    // Event listeners para los botones de paginación
+    pageItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            showPage(parseInt(item.dataset.page));
+        });
+    });
+
+    // Event listener para el botón anterior
+    prevButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (currentPage > 1) {
+            showPage(currentPage - 1);
+        }
+    });
+
+    // Event listener para el botón siguiente
+    nextButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (currentPage < totalPages) {
+            showPage(currentPage + 1);
+        }
+    });
+
+    // Mostrar la primera página al cargar
+    showPage(1);
+});
