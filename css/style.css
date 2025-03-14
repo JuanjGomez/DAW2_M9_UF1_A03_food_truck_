@@ -57,3 +57,20 @@
     height: 200px;
     object-fit: cover;
 }
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    z-index: 9999;
+    display: none;
+  }
+  .cookie-banner button.close {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #721c24;
+  }
