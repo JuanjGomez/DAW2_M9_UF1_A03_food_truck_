@@ -119,3 +119,19 @@ function updateSessionStartTime() {
 
 // Verificar la expiración de la sesión cada minuto
 setInterval(checkSessionExpiration, 60000);
+
+document.addEventListener('DOMContentLoaded', function() {
+    const cookiesContainer = document.getElementById('cookies-container');
+    const acceptButton = document.getElementById('accept-cookies');
+    const rejectButton = document.getElementById('reject-cookies');
+
+    function hideCookiesBanner() {
+        cookiesContainer.style.opacity = '0';
+        setTimeout(() => {
+            cookiesContainer.style.display = 'none';
+        }, 300);
+    }
+
+    acceptButton.addEventListener('click', hideCookiesBanner);
+    rejectButton.addEventListener('click', hideCookiesBanner);
+});
