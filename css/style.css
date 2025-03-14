@@ -42,3 +42,18 @@
     background-color: #e9ecef;
     color: #007bff; /* Color de texto de los enlaces al pasar el ratón */
 }
+.carousel {
+    max-width: 800px;
+    margin: 20px auto;
+}
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+.card {
+    height: 100%;
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
