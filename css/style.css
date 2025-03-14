@@ -42,3 +42,189 @@
     background-color: #e9ecef;
     color: #007bff; /* Color de texto de los enlaces al pasar el ratón */
 }
+.carousel {
+    max-width: 800px;
+    margin: 20px auto;
+}
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+.card {
+    height: 100%;
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    z-index: 9999;
+    display: none;
+  }
+  .cookie-banner button.close {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #721c24;
+  }
+  
+/* Estilos para los botones dropdown */
+.dropdown .btn-secondary {
+    background-color: transparent;
+    border: 2px solid;
+    color: inherit;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+}
+
+/* Estilos específicos para cada categoría */
+#dropdownFreds {
+    border-color: #4CAF50;
+}
+
+#dropdownFreds:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#dropdownCalents {
+    border-color: #f44336;
+}
+
+#dropdownCalents:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+#dropdownDolços {
+    border-color: #ff9800;
+}
+
+#dropdownDolços:hover {
+    background-color: #ff9800;
+    color: white;
+}
+
+#dropdownBegudes {
+    border-color: #2196F3;
+}
+
+#dropdownBegudes:hover {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Ajuste del ícono en los botones */
+.dropdown .btn-secondary i {
+    margin-right: 8px;
+    transition: all 0.3s ease;
+}
+
+.dropdown .btn-secondary:hover i {
+    color: white;
+}
+
+/* Centrado de los botones dropdown */
+.navbar .container-fluid {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.navbar-nav.mx-auto {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.dropdown {
+    flex: 1;
+    max-width: 150px; /* Ancho máximo para cada botón */
+}
+
+.dropdown .btn-secondary {
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px 15px;
+}
+
+/* Ajuste responsive */
+@media (max-width: 768px) {
+    .navbar-nav.mx-auto {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .dropdown {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+/* Estilos para la paginación */
+.pagination {
+    margin: 30px 0;
+}
+
+.pagination .page-item {
+    margin: 0 5px;
+}
+
+.pagination .page-link {
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #2c2d2c;
+    border-radius: 5px;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #1f1f1f;
+    color: white;
+    border-color: #000000;
+}
+
+.pagination .page-item:not(.active) .page-link:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.2);
+}
+
+.pagination .page-item.disabled .page-link {
+    border-color: #ccc;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Ajuste responsive para la paginación */
+@media (max-width: 576px) {
+    .pagination {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .pagination .page-item {
+        margin: 3px;
+    }
+    
+    .pagination .page-link {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
