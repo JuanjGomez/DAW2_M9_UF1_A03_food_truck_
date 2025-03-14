@@ -77,10 +77,10 @@
                     <!-- Login/Register Buttons (Right) -->
                     <div class="ms-auto">
                         <button class="btn btn-outline-success" id="loginButton" data-bs-toggle="modal" data-bs-target="#loginModal">
-                            <i class="fas fa-sign-in-alt"></i> Login
+                            <i class="fas fa-sign-in-alt"></i> 
                         </button>
                         <button class="btn btn-outline-danger" id="logoutButton" style="display: none;">
-                            <i class="fas fa-sign-out-alt"></i> Logout
+                            <i class="fas fa-sign-out-alt"></i> 
                         </button>
                     </div>
                 </div>
@@ -88,57 +88,54 @@
         </nav>
     </header>
 
-    <!-- Carrusel -->
-    <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/burger.webp" class="d-block w-50 mx-auto" alt="Imatge 1">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/iberic.jpg" class="d-block w-50 mx-auto" alt="Imatge 2">
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/1200x400?text=Imatge+3" class="d-block w-50 mx-auto" alt="Imatge 3">
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/1200x400?text=Imatge+4" class="d-block w-50 mx-auto" alt="Imatge 4">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+<!-- Carrusel -->
+<div id="foodCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#foodCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#foodCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#foodCarousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#foodCarousel" data-bs-slide-to="3"></button>
     </div>
-    
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./img/bocadillo-de-tortilla-de-patatas.jpg" class="d-block w-100" alt="Entrepà">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/burger.webp" class="d-block w-100" alt="Burger">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/frankfurt.JPG" class="d-block w-100" alt="Frankfurt">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/iberic.jpg" class="d-block w-100" alt="Entrepà ibéric">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#foodCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#foodCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
 
-    <!-- Breadcrumb (Molles de Pa) -->
-    <nav aria-label="breadcrumb" class="mt-4">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Inici</a></li>
-            <li class="breadcrumb-item"><a href="#">Menú</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Productes</li>
-        </ol>
-    </nav>
+<!-- Breadcrumb -->
+<nav aria-label="breadcrumb" class="container mt-3">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Inici</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Menú</li>
+    </ol>
+</nav>
 
-    <!-- Cards de Productes Destacats -->
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-4">
+<!-- Cards de Productes -->
+<div class="container mt-4">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
         <!-- Card 1 -->
         <div class="col">
             <div class="card">
-                <img src="https://via.placeholder.com/400x250?text=Producte+1" class="card-img-top" alt="Producte 1">
+                <img src="./img/burguer.JPG" class="card-img-top" alt="Hamburguesa">
                 <div class="card-body">
-                    <h5 class="card-title">Entrepà de Ibèric</h5>
-                    <p class="card-text">Entrepà gourmet amb ibèric de qualitat superior.</p>
+                    <h5 class="card-title">Burger</h5>
+                    <p class="card-text">Hamburguesa amb carn de primera qualitat, enciam, tomàquet i ceba.</p>
                     <div class="d-flex justify-content-between">
                         <i class="fas fa-thumbs-up text-success"></i>
                         <i class="fas fa-thumbs-down text-danger"></i>
@@ -150,10 +147,10 @@
         <!-- Card 2 -->
         <div class="col">
             <div class="card">
-                <img src="https://via.placeholder.com/400x250?text=Producte+2" class="card-img-top" alt="Producte 2">
+                <img src="./img/entrepa-de-formatge.JPG" class="card-img-top" alt="Entrepà">
                 <div class="card-body">
-                    <h5 class="card-title">Burger Clàssica</h5>
-                    <p class="card-text">Burger casolana amb carn de primera qualitat.</p>
+                    <h5 class="card-title">Entrepà de Formatge</h5>
+                    <p class="card-text">Entrepà amb formatge fonedor i ingredients frescos.</p>
                     <div class="d-flex justify-content-between">
                         <i class="fas fa-thumbs-up text-success"></i>
                         <i class="fas fa-thumbs-down text-danger"></i>
@@ -165,10 +162,10 @@
         <!-- Card 3 -->
         <div class="col">
             <div class="card">
-                <img src="https://via.placeholder.com/400x250?text=Producte+3" class="card-img-top" alt="Producte 3">
+                <img src="./img/creppe_de_xocolata.JPG" class="card-img-top" alt="Patates">
                 <div class="card-body">
-                    <h5 class="card-title">Gelat Magnum</h5>
-                    <p class="card-text">Gelat Magnum de xocolata amb un toc d'exclusivitat.</p>
+                    <h5 class="card-title">Creppe de xocolata</h5>
+                    <p class="card-text">Postre dolç amb xocolata calenta.</p>
                     <div class="d-flex justify-content-between">
                         <i class="fas fa-thumbs-up text-success"></i>
                         <i class="fas fa-thumbs-down text-danger"></i>
@@ -180,10 +177,10 @@
         <!-- Card 4 -->
         <div class="col">
             <div class="card">
-                <img src="https://via.placeholder.com/400x250?text=Producte+4" class="card-img-top" alt="Producte 4">
+                <img src="./img/cervesa.JPG" class="card-img-top" alt="Beguda">
                 <div class="card-body">
-                    <h5 class="card-title">Cervesa Artesanal</h5>
-                    <p class="card-text">Cervesa artesanal fresca per acompanyar els teus àpats.</p>
+                    <h5 class="card-title">Refresc</h5>
+                    <p class="card-text">Refresc fred per acompanyar el teu menjar.</p>
                     <div class="d-flex justify-content-between">
                         <i class="fas fa-thumbs-up text-success"></i>
                         <i class="fas fa-thumbs-down text-danger"></i>
@@ -192,27 +189,7 @@
             </div>
         </div>
     </div>
-
-    <!-- Paginació -->
-    <nav aria-label="Paginació" class="mt-4">
-        <ul class="pagination justify-content-center">
-            <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1">Anterior</a>
-            </li>
-            <li class="page-item active" aria-current="page">
-                <a class="page-link" href="#">1</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">3</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">Següent</a>
-            </li>
-        </ul>
-    </nav>
+</div>
 
     <!-- Login Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
@@ -238,7 +215,26 @@
             </div>
         </div>
     </div>
-
+    <!-- Paginació -->
+    <nav aria-label="Paginació" class="mt-4">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Anterior</a>
+            </li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">Següent</a>
+            </li>
+        </ul>
+    </nav>
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
         <div class="container">
