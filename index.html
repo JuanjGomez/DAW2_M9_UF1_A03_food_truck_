@@ -72,7 +72,6 @@
                                 <li><a class="dropdown-item" href="#">Cervesa</a></li>
                             </ul>
                         </div>
-                        
                     </div>
 
                     <!-- Login/Register Buttons (Right) -->
@@ -88,6 +87,132 @@
             </div>
         </nav>
     </header>
+
+    <!-- Carrusel -->
+    <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/burger.webp" class="d-block w-50 mx-auto" alt="Imatge 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/iberic.jpg" class="d-block w-50 mx-auto" alt="Imatge 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x400?text=Imatge+3" class="d-block w-50 mx-auto" alt="Imatge 3">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x400?text=Imatge+4" class="d-block w-50 mx-auto" alt="Imatge 4">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+
+    <!-- Breadcrumb (Molles de Pa) -->
+    <nav aria-label="breadcrumb" class="mt-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Inici</a></li>
+            <li class="breadcrumb-item"><a href="#">Menú</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Productes</li>
+        </ol>
+    </nav>
+
+    <!-- Cards de Productes Destacats -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-4">
+        <!-- Card 1 -->
+        <div class="col">
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250?text=Producte+1" class="card-img-top" alt="Producte 1">
+                <div class="card-body">
+                    <h5 class="card-title">Entrepà de Ibèric</h5>
+                    <p class="card-text">Entrepà gourmet amb ibèric de qualitat superior.</p>
+                    <div class="d-flex justify-content-between">
+                        <i class="fas fa-thumbs-up text-success"></i>
+                        <i class="fas fa-thumbs-down text-danger"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col">
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250?text=Producte+2" class="card-img-top" alt="Producte 2">
+                <div class="card-body">
+                    <h5 class="card-title">Burger Clàssica</h5>
+                    <p class="card-text">Burger casolana amb carn de primera qualitat.</p>
+                    <div class="d-flex justify-content-between">
+                        <i class="fas fa-thumbs-up text-success"></i>
+                        <i class="fas fa-thumbs-down text-danger"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col">
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250?text=Producte+3" class="card-img-top" alt="Producte 3">
+                <div class="card-body">
+                    <h5 class="card-title">Gelat Magnum</h5>
+                    <p class="card-text">Gelat Magnum de xocolata amb un toc d'exclusivitat.</p>
+                    <div class="d-flex justify-content-between">
+                        <i class="fas fa-thumbs-up text-success"></i>
+                        <i class="fas fa-thumbs-down text-danger"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col">
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250?text=Producte+4" class="card-img-top" alt="Producte 4">
+                <div class="card-body">
+                    <h5 class="card-title">Cervesa Artesanal</h5>
+                    <p class="card-text">Cervesa artesanal fresca per acompanyar els teus àpats.</p>
+                    <div class="d-flex justify-content-between">
+                        <i class="fas fa-thumbs-up text-success"></i>
+                        <i class="fas fa-thumbs-down text-danger"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Paginació -->
+    <nav aria-label="Paginació" class="mt-4">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Anterior</a>
+            </li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">Següent</a>
+            </li>
+        </ul>
+    </nav>
 
     <!-- Login Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
@@ -114,7 +239,7 @@
         </div>
     </div>
 
-    
+    <!-- Footer -->
     <footer class="bg-dark text-white py-4">
         <div class="container">
             <div class="row text-center">
@@ -140,7 +265,7 @@
             <!-- Nueva sección de enlaces -->
             <div class="row mt-4">
                 <div class="col-md-4 text-center">
-                    <a href="https://www.google.com/maps/place/Jesu%C3%AFtes+Bellvitge+-+Centre+d'Estudis+Joan+XXIII/@41.3500155,2.1082873,17.82z/data=!4m6!3m5!1s0x12a498d64bd023fd:0x26089fc39cb352a3!8m2!3d41.3498965!4d2.1072972!16s%2Fg%2F11c2pbk10k?entry=ttu&g_ep=EgoyMDI1MDIyNS4wIKXMDSoASAFQAw%3D%3D" class="text-white text-decoration-none">
+                    <a href="https://www.google.com/maps/place/Jesu%C3%AFtes+Bellvitge" class="text-white text-decoration-none">
                         <i class="fas fa-map-marker-alt fs-2 mb-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Donde estamos"></i>
                         <p>Donde estamos</p>
                     </a>
@@ -173,6 +298,7 @@
             </div>
         </div>
     </footer>
+
     <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
