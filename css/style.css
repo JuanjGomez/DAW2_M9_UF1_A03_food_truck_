@@ -149,7 +149,7 @@
 
 .dropdown {
     flex: 1;
-    max-width: 150px; 
+    max-width: 150px; /* Ancho máximo para cada botón */
 }
 
 .dropdown .btn-secondary {
@@ -172,5 +172,59 @@
     .dropdown {
         width: 100%;
         max-width: 200px;
+    }
+}
+
+/* Estilos para la paginación */
+.pagination {
+    margin: 30px 0;
+}
+
+.pagination .page-item {
+    margin: 0 5px;
+}
+
+.pagination .page-link {
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #2c2d2c;
+    border-radius: 5px;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #1f1f1f;
+    color: white;
+    border-color: #000000;
+}
+
+.pagination .page-item:not(.active) .page-link:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.2);
+}
+
+.pagination .page-item.disabled .page-link {
+    border-color: #ccc;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Ajuste responsive para la paginación */
+@media (max-width: 576px) {
+    .pagination {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .pagination .page-item {
+        margin: 3px;
+    }
+    
+    .pagination .page-link {
+        padding: 6px 12px;
+        font-size: 0.9rem;
     }
 }
