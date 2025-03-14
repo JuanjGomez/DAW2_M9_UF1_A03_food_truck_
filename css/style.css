@@ -74,3 +74,103 @@
     font-size: 1.5rem;
     color: #721c24;
   }
+  
+/* Estilos para los botones dropdown */
+.dropdown .btn-secondary {
+    background-color: transparent;
+    border: 2px solid;
+    color: inherit;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+}
+
+/* Estilos específicos para cada categoría */
+#dropdownFreds {
+    border-color: #4CAF50;
+}
+
+#dropdownFreds:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#dropdownCalents {
+    border-color: #f44336;
+}
+
+#dropdownCalents:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+#dropdownDolços {
+    border-color: #ff9800;
+}
+
+#dropdownDolços:hover {
+    background-color: #ff9800;
+    color: white;
+}
+
+#dropdownBegudes {
+    border-color: #2196F3;
+}
+
+#dropdownBegudes:hover {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Ajuste del ícono en los botones */
+.dropdown .btn-secondary i {
+    margin-right: 8px;
+    transition: all 0.3s ease;
+}
+
+.dropdown .btn-secondary:hover i {
+    color: white;
+}
+
+/* Centrado de los botones dropdown */
+.navbar .container-fluid {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.navbar-nav.mx-auto {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.dropdown {
+    flex: 1;
+    max-width: 150px; 
+}
+
+.dropdown .btn-secondary {
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px 15px;
+}
+
+/* Ajuste responsive */
+@media (max-width: 768px) {
+    .navbar-nav.mx-auto {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .dropdown {
+        width: 100%;
+        max-width: 200px;
+    }
+}
